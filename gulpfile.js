@@ -26,7 +26,7 @@ gulp.task('server', function () {
 
 //images processing
 gulp.task('img', function () {
-    gulp.src(['src/img/**/*.*'])
+    return gulp.src(['src/img/**/*.*'])
         .pipe(imagemin({
             interlaced: true,
             progressive: true,
@@ -95,7 +95,7 @@ gulp.task('sitemap', function () {
 
 //copy fonts
 gulp.task('fonts', function () {
-    gulp.src(['src/css/webfonts/**/*.*'])
+    return gulp.src(['src/css/webfonts/**/*.*'])
     .pipe(gulp.dest('app/css/webfonts'));
 });
 

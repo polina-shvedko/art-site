@@ -1,7 +1,52 @@
+:root{
+    --font-relaway: 'Raleway', sans-serif;
+    --font-opensans: "Open Sans", sans-serif;
+    --navigation-background-color: rgba(209, 153, 97, 0.25);
+    --headlines-color: rgba(209, 153, 97, 1);
+    --font-color: #212529;
+}
+
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-opensans);
 }
 
 h1{
-    font-family: 'Raleway', sans-serif;;
+    font-family: var(--font-relaway);
+    color: var(--headlines-color);
+    font-size: 3rem;
+}
+
+.logo img{
+    max-width:100px;
+    height: auto;
+}
+
+.navigation {
+    background-color: rgba(209, 153, 97, 0.25);
+    background-color: var(--navigation-background-color);
+    padding: 1rem 0;
+}
+.navigation-item{
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.social-icon {
+    color: var(--font-color);
+}
+.social-icon:hover {
+    color: var(--font-color);
+    opacity: 0.5;
+}
+.portrait img{
+    max-width: 300px;
+    height: auto;
+    border: 2px solid var(--headlines-color);
+    padding: 5px;
+}
+
+.intro div{
+    font-size: 1.5rem;
+    font-family: var(--font-relaway);
 }
