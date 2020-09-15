@@ -1,6 +1,7 @@
 :root{
     --font-relaway: 'Raleway', sans-serif;
     --font-opensans: "Open Sans", sans-serif;
+    --body-background-color: #fff;
     --navigation-background-color: rgba(209, 153, 97, 0.25);
     --headlines-color: rgba(209, 153, 97, 1);
     --font-color: #212529;
@@ -8,6 +9,7 @@
 
 body{
     font-family: var(--font-opensans);
+    background-color: var(--body-background-color);
 }
 
 h1{
@@ -15,16 +17,21 @@ h1{
     color: var(--headlines-color);
     font-size: 3rem;
 }
+h2{
+    font-family: var(--font-relaway);
+    font-size: 2.5rem;
+}
 
 .logo img{
     max-width:100px;
     height: auto;
 }
 
-.navigation {
+.navigation, .newest {
     background-color: rgba(209, 153, 97, 0.25);
     background-color: var(--navigation-background-color);
     padding: 1rem 0;
+    margin: 0;
 }
 .navigation-item{
     font-size: 13px;
@@ -50,3 +57,48 @@ h1{
     font-size: 1.5rem;
     font-family: var(--font-relaway);
 }
+.newest .newest-item{
+    background-color: var(--body-background-color);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.newest .newest-item.portrait{
+    width: 350px;
+    max-width: 350px;
+    height: 470px;
+    max-height: 470px;
+}
+
+.newest .newest-item.landscape{
+    width: 500px;
+    max-width: 500px;
+    height: 395px;
+     max-height: 395px;
+    background-color: var(--body-background-color);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.newest-content{
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.newest-content:hover{
+    transform: scale(0.95);
+    transition: all .2s ease-in;
+}
+
+.newest-content.item1{
+    background-image:url("../img/newest1.jpg") ;
+    height: 375px;
+}
+.newest-content.item2{
+    background-image:url("../img/newest3.jpg") ;
+    height: 300px;
+}
+
+
+
