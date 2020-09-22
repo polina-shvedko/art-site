@@ -27,7 +27,7 @@ h2{
     height: auto;
 }
 
-.navigation, .newest {
+.navigation, .newest, .contact {
     background-color: rgba(209, 153, 97, 0.25);
     background-color: var(--navigation-background-color);
     padding: 1rem 0;
