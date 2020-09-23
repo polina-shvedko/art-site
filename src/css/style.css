@@ -37,6 +37,7 @@ h2{
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: var(--font-color);
 }
 
 .social-icon {
