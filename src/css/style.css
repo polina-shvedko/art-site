@@ -8,7 +8,7 @@
 }
 
 body{
-    font-family: var(--font-opensans);
+    font-family: var(--font-relaway);
     background-color: var(--body-background-color);
 }
 
@@ -82,28 +82,50 @@ h2{
 }
 
 .newest-content{
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .newest-content:hover{
-    transform: scale(0.95);
+    transform: scale(1.05);
     transition: all .2s ease-in;
 }
 
 .newest-content.item1{
     background-image:url("../img/newest1.jpg") ;
-    height: 375px;
+    height: 410px;
 }
 .newest-content.item2{
     background-image:url("../img/newest3.jpg") ;
-    height: 300px;
+    height: 332px;
 }
+
+.newest-header{
+    color: var(--font-color);
+    border-top: 1px solid var(--body-background-color);
+    border-right: 1px solid var(--body-background-color);
+    border-left: 1px solid var(--body-background-color);
+}
+
+.newest-header:hover{
+    text-decoration: none;
+    color: var(--font-color);
+    cursor: pointer;
+background-color: var(--navigation-background-color);
+}
+
 
 .gallery-wrapper {
     background-color: var(--navigation-background-color);
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.gallery-header{
+    border-top: 1px solid var(--navigation-background-color);
+}
+.gallery-header:hover{
+    background-color: var(--body-background-color);
 }
 
 .gallery-item{
@@ -118,6 +140,15 @@ h2{
     transform: scale(0.95);
     transition: all .2s ease-in;
     cursor: pointer;
+}
+
+.gallery-headline{
+    color: var(--font-color);
+}
+
+.gallery-headline:hover{
+    color: var(--font-color);
+    text-decoration: none;
 }
 
 .gallery-item.item1{
