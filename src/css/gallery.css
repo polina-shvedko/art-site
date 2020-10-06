@@ -1,0 +1,33 @@
+.gallery-img img{
+    max-width: 250px;
+    height: auto;
+}
+
+.gallery-card-status{
+    font-size: 0.9rem;
+}
+
+.gallery-card-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.gallery-card-price{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.gallery-details a{
+    background-color: var(--navigation-background-color);
+    border-color: var(--navigation-background-color);
+    color: var(--font-color);
+}
+
+.gallery-details a:hover{
+    background-color: var(--body-background-color);
+    color: var(--font-color);
+    border-color: var(--navigation-background-color);
+}
+
